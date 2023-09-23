@@ -1,7 +1,6 @@
 const elementoInsereLivros = document.getElementById("livros");
 const valorTotalLivrosDisponiveis = document.getElementById(
-  "valor_total_livros_disponiveis"
-);
+  "valor_total_livros_disponiveis");
 
 function exibirLivrosNaTela(listaDeLivros) {
   valorTotalLivrosDisponiveis.innerHTML = "";
@@ -21,15 +20,11 @@ function exibirLivrosNaTela(listaDeLivros) {
       <div class="tags">
         <span class="tag">${livro.categoria}</span>
       </div>
-    </div>
-    `;
-  });
-}
-// verifica se a quantidade de livros é maior que 0 e adiciona a classe o seletor CSS correto
+    </div>    `;  });}
+
+// verifica se a quantidade de livros é maior que 0 e adiciona na classe o seletor CSS correto
 function verificaEstoque(livro) {
   if (livro.quantidade > 0) {
-    return "livro__imagens";
-  } else {
-    return "livro__imagens indisponivel";
-  }
-}
+    return "livro__imagens"; } 
+  else {
+    return "livro__imagens indisponivel";  }}
