@@ -11,22 +11,17 @@ function filtrarLivros() {
   exibirLivrosNaTela(livrosFiltrados);
   if (categoria == "disponivel") {
     const valorTotal = ValorTotalDISPONIVEIS(livrosFiltrados)
-    exibirValorTotal(valorTotal);
-  }
-}
+    exibirValorTotal(valorTotal);  }}
 
 function filtroCategoria(categoria) {
-  return livros.filter((livro) => livro.categoria == categoria);
-}
+  return livros.filter((livro) => livro.categoria == categoria);}
 
 function fitroDisponibilidade() {
-  return livros.filter((livro) => livro.quantidade > 0);
-}
+  return livros.filter((livro) => livro.quantidade > 0);}
 
 function exibirValorTotal(valorTotal) {
   valorTotalLivrosDisponiveis.innerHTML = `
   <div class="livros__disponiveis">
       <p>Todos os livros disponíveis por R$ <span id="valor">${valorTotal}</span></p>
     </div>
-    `;
-}
+    `;}
